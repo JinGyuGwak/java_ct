@@ -33,7 +33,15 @@ public class SolutionLv0 {
         for (int i = my_string.length() - 1; i >= 0; i--) {
             reversed.append(my_string.charAt(i));
         }
-
         return reversed.toString();
+    }
+    public int solution5(String[] s1, String[] s2){
+        int a=0;
+        List<String> list=Arrays.asList(s2);
+        for(String s : s1){
+            if(list.contains(s)) a+=1;
+
+        }
+        return a;
     }
 }
