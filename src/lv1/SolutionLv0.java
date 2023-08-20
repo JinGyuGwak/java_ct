@@ -44,4 +44,35 @@ public class SolutionLv0 {
         }
         return a;
     }
+    public String solution6(String my_string, String letter) {
+        String answer = "";
+        answer = my_string.replace(letter, "");
+        return answer;
+    }
+    public int solution7(int[] dot){
+        if(dot[0]>0 && dot[1]>0) return 1;
+        else if(dot[0]<0 && dot[1]>0) return 2;
+        else if(dot[0]<0 && dot[1]<0) return 3;
+        else return 4;
+    }
+    public int solution8(int price){
+        double a = price;
+        if(price>=500000) a=a*0.8;
+        else if(price>=300000) a=a*0.9;
+        else if(price>=100000) a= a*0.95;
+        return (int)a;
+    }
+    public int solution9(String str1, String str2) {
+        if(str1.contains(str2)) return 1;
+        else return 2;
+    }
+    public int[] solution10(String[] strlist){
+        int[] answer= new int[strlist.length];
+        int count=0;
+        for(String a : strlist){
+            answer[count]=a.length();
+            count++;
+        }
+        return answer;
+    }
 }
