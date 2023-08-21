@@ -75,4 +75,19 @@ public class SolutionLv0 {
         }
         return answer;
     }
+    public int[] solution11(int[] numbers){
+        int[] answer=new int[numbers.length];
+        for(int i = 0 ; i< numbers.length ; i++){
+            answer[i]= numbers[i]*2;
+        }
+        return answer;
+    }
+    public int[] solution12(int[] numbers, int num1, int num2){
+        int[] answer = new int[numbers.length];
+
+        answer = Arrays.copyOfRange(numbers, num1, num2 + 1);
+
+        return answer;
+    }
+
 }

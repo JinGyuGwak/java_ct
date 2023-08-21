@@ -18,7 +18,9 @@ public class Main {
 //        System.out.println("sol7 = " + sol.solution7(new int[]{2,4}));
 //        System.out.println("sol.solution8(150000) = " + sol.solution8(150000));
 //        System.out.println("sol.solution9() = " + sol.solution9("ab6CDE443fgh22iJKlmn1o","6CD"));
-        System.out.println(Arrays.toString(sol.solution10(new String[]{"We", "are", "the", "world!"})));
+//        System.out.println(Arrays.toString(sol.solution10(new String[]{"We", "are", "the", "world!"})));
+//        System.out.println("sol.solution11() = " + Arrays.toString(sol.solution11(new int[]{1,2,3,4,5})));
+        System.out.println("sol.solution12() = " + Arrays.toString(sol.solution12(new int[]{1,2,3,4,5},1,5)));
 
 
     }
