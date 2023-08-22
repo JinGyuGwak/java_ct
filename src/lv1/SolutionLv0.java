@@ -84,10 +84,48 @@ public class SolutionLv0 {
     }
     public int[] solution12(int[] numbers, int num1, int num2){
         int[] answer = new int[numbers.length];
+        Arrays.asList(numbers);
 
         answer = Arrays.copyOfRange(numbers, num1, num2 + 1);
 
         return answer;
     }
+    public int solution13(int[] array, int n){
+        int c=0;
+        for(int i : array){
+            if(i==n) c+=1;
+        }
+        return c;
+    }
+    public String solution14(String my_string) {
+        StringBuilder answer = new StringBuilder(my_string);
+        int c=0;
+        while(c!=answer.length()){
+            if(answer.charAt(c) == 'a' ||
+                    answer.charAt(c) == 'e' ||
+                    answer.charAt(c) == 'i' ||
+                    answer.charAt(c) == 'o' ||
+                    answer.charAt(c) == 'u') answer.deleteCharAt(c);
+            else c+=1;
+        }
+        return answer.toString();
+    }
+    public int solution15(int n){ //n=20
+        int answer=0;
+        if(n==1)return 1;
+        for(int i = 1; i<=n;i++){
+            if(n%i==0)answer+=1;
+        }
+        return answer;
+    }
+    public int solution16(int n){
+        int answer=0;
+        int count=10;
+        while(1<=n){
+            answer+=n%count;
+            n/=10;
 
+        }
+        return answer;
+    }
 }
