@@ -124,8 +124,10 @@ public class SolutionLv0 {
         while(1<=n){
             answer+=n%count;
             n/=10;
-
         }
         return answer;
     }
+
+
+
 }

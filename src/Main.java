@@ -1,13 +1,14 @@
+import boj_silver.BojSilver2606_S3;
 import lv1.SolutionLv0;
 
 // 자동완성 끄기
 // File → Settings → Editor → General → Code Completion에서 Show suggestions as you type
 
-import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
         SolutionLv0 sol = new SolutionLv0();
+        BojSilver2606_S3 bojSilver2606S3 = new BojSilver2606_S3();
 //        System.out.println(sol.solution0(new int[]{1, 2, 3}));
 //        System.out.println(sol.solution1(new int[]{149, 180, 192,170},167));
 //        System.out.println(Arrays.toString(sol.solution2(new int[]{1, 2, 3, 4, 5})));
@@ -24,7 +25,8 @@ public class Main {
 //        System.out.println("sol.solution13()   = " + sol.solution13(new int[]{1,1,2,3,4,5},1));
 //        System.out.println("sol.solution14() = " + sol.solution14("nice to meet you"));
 //        System.out.println("sol.solution15() = " + sol.solution15(3));
-        System.out.println("sol.solution16() = " + sol.solution16(1234));
+//        System.out.println("sol.solution16() = " + sol.solution16(1234));
+
 
 
 
