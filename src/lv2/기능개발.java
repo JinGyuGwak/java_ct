@@ -1,6 +1,6 @@
 package lv2;
 import java.util.*;
-public class Sol1 {
+public class 기능개발 {
     public static int[] solution(int[] progresses, int[] speeds) {
         List<Integer> answer = new ArrayList();
         Queue<Integer> q = new ArrayDeque();
@@ -22,6 +22,6 @@ public class Sol1 {
 
     }
     public static void main(String[] args){
-        System.out.println(Arrays.toString(Sol1.solution(new int[]{96,94},new int[]{3,3})));
+        System.out.println(Arrays.toString(기능개발.solution(new int[]{96,94},new int[]{3,3})));
     }
 }
