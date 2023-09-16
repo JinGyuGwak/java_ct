@@ -3,9 +3,13 @@ import java.io.*;
 import java.util.*;
 
 /**
- * 6 0
- * 1 1 9 1 1 1
- * 0 1 2 3 4 5
+ 3
+ 1 0
+ 5
+ 4 2
+ 1 2 3 4
+ 6 0
+ 1 1 9 1 1 1
  */
 public class Boj1966_S3 {
 
@@ -18,7 +22,7 @@ public class Boj1966_S3 {
         int t = Integer.parseInt(br.readLine());
         for(int i=0;i<t;i++){
             queue = new ArrayDeque();
-            indexQ=new ArrayDeque();
+            indexQ = new ArrayDeque();
 
             StringTokenizer st = new StringTokenizer(br.readLine());
             n = Integer.parseInt(st.nextToken());
