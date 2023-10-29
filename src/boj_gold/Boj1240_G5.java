@@ -27,20 +27,22 @@ public class Boj1240_G5 {
             n1=Integer.parseInt(st.nextToken());
             n2=Integer.parseInt(st.nextToken());
             visit = new int[n+1];
-            visit[n1]=1;
             count=0;
             sol(n1);
         }
     }
     public static void sol(int now){ // 3
-
+        if(n1==n2){
+            System.out.println(0);
+            return ;
+        }
         if(a[now][n2]!=0){
             System.out.println(count+=a[now][n2]);
             return ;
         }
+        visit[now]=1;
         for(int i=1;i<=n;i++){
             if(a[now][i]!=0 && visit[i]==0){
-                visit[i]=1;
                 count+=a[now][i];
                 sol(i);
             }
