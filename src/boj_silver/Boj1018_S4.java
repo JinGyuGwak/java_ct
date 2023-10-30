@@ -20,7 +20,6 @@ public class Boj1018_S4 {
                 else a[i][j]=0;
             }
         }
-        List<Integer> dap = new ArrayList<>();
         for(int i=0;i<n-7;i++){
             for(int j=0;j<m-7;j++){
                 solve(i,j);
