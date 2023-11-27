@@ -42,11 +42,12 @@ public class Boj1967_G4 {
             }
         }
     }
-}
-class Node{
-    int idx,cnt;
-    Node(int idx, int cnt){
-        this.idx = idx;
-        this.cnt = cnt;
+    static class Node {
+        int idx, cnt;
+
+        Node(int idx, int cnt) {
+            this.idx = idx;
+            this.cnt = cnt;
+        }
     }
 }
