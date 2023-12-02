@@ -14,22 +14,5 @@ public class Boj1107_G5 {
                 visit[Integer.parseInt(st.nextToken())] = 1;
             }
         }
-        int dap = Math.abs(target-100);
-        for(int i=0;i<=999999;i++){
-            String s = Integer.toString(i);
-            int len = s.length();
-            boolean sw = false;
-            for(int j=0;j<len;j++){
-                if(visit[s.charAt(j)-'0']==1){
-                    sw=true;
-                    break;
-                }
-            }
-            if(!sw){
-                int min = Math.abs(target-i)+len;
-                dap=Math.min(dap,min);
-            }
-        }
-        System.out.println(dap);
     }
 }
