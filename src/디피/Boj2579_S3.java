@@ -15,6 +15,7 @@ public class Boj2579_S3 {
         dp[1]=a[1]+a[0];
         dp[2]=Math.max(a[0],a[1])+a[2];
         for(int i=3;i<n;i++){
+            // i-1번째 계단이 dp로 된 값으로 할 경우 메모이제이션이 된 경우인지 아닌지를 판단할 수 없다 (연속된 3개의 계단일 수 있음)
             dp[i]=Math.max(a[i-1]+dp[i-3],dp[i-2])+a[i];
         }
         System.out.println(Arrays.toString(dp));
