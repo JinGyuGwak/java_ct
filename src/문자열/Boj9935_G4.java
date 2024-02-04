@@ -3,6 +3,7 @@ import java.util.*;
 import java.io.*;
 public class Boj9935_G4 {
     public static void main(String[] args) throws IOException {
+        //왜 틀리냐 ㄹㄴㅇㄹㅇㄴㄹㄴㅇㄴ
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder s = new StringBuilder(br.readLine());
         String dap = br.readLine();
